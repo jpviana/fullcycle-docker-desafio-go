@@ -10,6 +10,6 @@ FROM scratch
 
 WORKDIR /usr/src/app
 
-COPY --from=builder /usr/src/app/hello .
+COPY --from=builder /usr/src/app/ .
 
-ENTRYPOINT ./hello
+ENTRYPOINT ["./hello"]
